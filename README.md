@@ -1,4 +1,4 @@
-# Rastrea Focinho 
+# Rastrea Focinho
 
 ### 1. **Tema e Nome do Projeto**
 
@@ -40,18 +40,18 @@
 
  - O projeto trará um impacto significativo para a sociedade ao facilitar os reencontros entre donos e seus pets, reduzindo o tempo e o esforço necessários para localizar animais desaparecidos. Além disso, a plataforma promoverá o bem-estar animal ao oferecer uma solução mais eficaz e compassiva, e também introduzirá inovações tecnológicas, como o reconhecimento de imagem, para transformar a forma como lidamos com essa questão tão sensível.
 
-### 7) Qual é o diferencial/inovação do projeto em relação ao que já existe?
+### 7. **Qual é o diferencial/inovação do projeto em relação ao que já existe?**
 
 O diferencial do nosso projeto está na integração de algoritmos de inteligência artificial para reconhecimento de imagens, permitindo que os usuários realizem buscas rápidas e eficientes ao cruzar fotos com informações na nossa base de dados. Além disso, nossa plataforma se destaca por oferecer uma interface moderna, intuitiva e acessível, tornando o processo de busca e anúncio de pets desaparecidos ainda mais fácil e eficaz.
 
-### 8) Como o projeto se sustentará? Quais são os mecanismos de monetização?
+### 8. **Como o projeto se sustentará? Quais são os mecanismos de monetização?**
 
 O projeto poderá se sustentar por meio de diversos mecanismos de monetização, como:
 
 - **Parcerias com Pet Shops e Clínicas Veterinárias:** Estabelecer parcerias para promover serviços e produtos específicos, gerando receita por meio de comissões.
 - **Doações:** Disponibilizar a opção de doações para apoiar a manutenção e o desenvolvimento contínuo da plataforma.
 
- ### 9)Requisitos do Sistema para Rastrea Focinho
+### 9. **Requisitos do Sistema para Rastrea Focinho**
 
 1. **Cadastro e Gerenciamento de Usuários**
    - **Descrição:** O sistema deve permitir que donos de animais, voluntários, e organizações se cadastrem e gerenciem suas contas. Deve incluir funcionalidades para editar perfis, visualizar histórico de buscas e gerenciar configurações de notificação.
@@ -77,10 +77,7 @@ O projeto poderá se sustentar por meio de diversos mecanismos de monetização,
    - **Descrição:** O sistema deve incluir opções para monetização, como assinaturas premium, publicidade segmentada e parcerias com pet shops e clínicas veterinárias.
    - **Funcionalidade:** Implementação de planos de assinatura e opções de pagamento; integração de anúncios; gerenciamento de parcerias e comissões.
 
-
----
-
-### 10)**Entidades, Atributos, Relacionamentos e Restrições do Banco de Dados**
+### 10. **Entidades, Atributos, Relacionamentos e Restrições do Banco de Dados**
 
 #### 1. **Entidades e Atributos**
 
@@ -120,7 +117,9 @@ O projeto poderá se sustentar por meio de diversos mecanismos de monetização,
      - `avistamento_id` (PK): Identificador único do avistamento
      - `animal_id` (FK): Identificador do animal avistado
      - `usuario_id` (FK): Identificador do usuário que relatou o avistamento
-     - `data_avistamento`: Data do avistamento
+     - `data_avistamento`:
+
+ Data do avistamento
      - `localizacao`: Localização onde o animal foi avistado
      - `descricao`: Descrição do avistamento
 
@@ -191,7 +190,53 @@ O projeto poderá se sustentar por meio de diversos mecanismos de monetização,
 6. **Notificação:**
    - As notificações devem ser enviadas somente para usuários ativos e devem respeitar o tipo de notificação especificado.
 
+### 11. **Integração de Inteligência Artificial para Identificação de Animais**
 
-### Resumo
+#### 11.1 **Objetivo**
 
-**Rastrea Focinho** visa criar uma plataforma centralizada e eficiente para a busca de animais domésticos desaparecidos, ajudando a superar a desorganização e melhorar a comunicação entre donos, voluntários e a comunidade. A plataforma será direcionada a donos de pets, voluntários, organizações de resgate e a comunidade local, oferecendo ferramentas para registro, busca, e comunicação para facilitar a recuperação de animais perdidos.
+Integrar IA para identificar animais a partir de fotos enviadas pelos usuários, melhorando a busca e recuperação de pets desaparecidos.
+
+#### 11.2 **Arquitetura do Sistema**
+
+1. **Entrada de Dados**
+   - **Fotos do Animal:** Envio de imagens pelos usuários.
+   - **Base de Dados:** Imagens e informações de animais desaparecidos.
+
+2. **Processamento de Imagem**
+   - **Pré-processamento:** Ajuste e normalização das imagens.
+   - **Extração de Recursos:** Identificação de características visuais dos animais.
+
+3. **Modelo de Reconhecimento**
+   - **Treinamento:** Uso de Redes Neurais Convolucionais (CNNs) para criar o modelo.
+   - **Inferência:** Comparação de novas imagens com a base de dados para identificar correspondências.
+
+4. **Resultados e Feedback**
+   - **Resultados:** Exibição de possíveis correspondências com pontuação de similaridade.
+   - **Feedback:** Usuários podem avaliar a precisão para melhorar o modelo.
+
+#### 11.3 **Tecnologias Utilizadas**
+
+- **TensorFlow / Keras:** Desenvolvimento e treinamento do modelo.
+- **OpenCV:** Pré-processamento de imagens.
+- **APIs:** Integração com APIs externas, se necessário.
+
+#### 11.4 **Implementação**
+
+1. **Coleta e Preparação de Dados:** Reunião e anotação de imagens para treinamento.
+2. **Desenvolvimento do Modelo:** Criação e ajuste do modelo de reconhecimento.
+3. **Integração:** Conexão do modelo com a plataforma e desenvolvimento da interface de usuário.
+4. **Testes e Validação:** Avaliação da precisão e usabilidade com usuários reais.
+
+#### 11.5 **Desafios**
+
+- **Precisão:** Garantir a identificação correta de uma ampla variedade de animais.
+- **Privacidade:** Proteger as imagens enviadas e garantir conformidade com regulamentos.
+- **Escalabilidade:** Manter o desempenho com aumento de usuários e imagens.
+
+#### 11.6 **Impacto**
+
+A IA permitirá buscas mais precisas e rápidas, aumentando a taxa de recuperação de animais e estabelecendo um diferencial competitivo para a plataforma **Rastrea Focinho**.
+
+---
+
+**Rastrea Focinho** visa criar uma plataforma centralizada e eficiente para a busca de animais domésticos desaparecidos, ajudando a superar a desorganização e melhorar a comunicação entre donos, voluntários e a comunidade. A plataforma será direcionada a donos de pets, voluntários, organizações de resgate e a comunidade local, oferecendo ferramentas para registro, busca, e comunicação para facilitar a recuperação de animais perdidos. A integração de inteligência artificial para reconhecimento de imagens complementará essas funcionalidades, aprimorando ainda mais a eficácia da plataforma.
