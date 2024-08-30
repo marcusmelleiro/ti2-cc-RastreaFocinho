@@ -77,9 +77,120 @@ O projeto poderá se sustentar por meio de diversos mecanismos de monetização,
    - **Descrição:** O sistema deve incluir opções para monetização, como assinaturas premium, publicidade segmentada e parcerias com pet shops e clínicas veterinárias.
    - **Funcionalidade:** Implementação de planos de assinatura e opções de pagamento; integração de anúncios; gerenciamento de parcerias e comissões.
 
-Esses requisitos cobrem as principais funcionalidades necessárias para garantir que o sistema **Rastrea Focinho** atenda às necessidades dos usuários e se mantenha eficiente e sustentável.  
 
---- 
+---
+
+### 10)**Entidades, Atributos, Relacionamentos e Restrições do Banco de Dados**
+
+#### 1. **Entidades e Atributos**
+
+1. **Usuário**
+   - **Atributos:**
+     - `usuario_id` (PK): Identificador único do usuário
+     - `nome`: Nome completo do usuário
+     - `email`: Endereço de e-mail (único)
+     - `senha`: Senha para acesso ao sistema
+     - `telefone`: Número de telefone
+     - `endereco`: Endereço residencial
+     - `tipo_usuario`: Tipo de usuário (Dono, Voluntário, Organização, Veterinário, Autoridade)
+
+2. **Animal**
+   - **Atributos:**
+     - `animal_id` (PK): Identificador único do animal
+     - `nome`: Nome do animal
+     - `tipo`: Tipo de animal (Cachorro, Gato, etc.)
+     - `raca`: Raça do animal
+     - `cor`: Cor do animal
+     - `descricao`: Descrição adicional do animal
+     - `foto_url`: URL da foto do animal
+     - `data_desaparecimento`: Data em que o animal desapareceu
+     - `localizacao_desaparecimento`: Local onde o animal desapareceu
+     - `status`: Status do animal (Desaparecido, Encontrado)
+
+3. **Busca**
+   - **Atributos:**
+     - `busca_id` (PK): Identificador único da busca
+     - `usuario_id` (FK): Identificador do usuário que fez a busca
+     - `animal_id` (FK): Identificador do animal sendo buscado
+     - `data_busca`: Data da busca
+     - `resultados`: Resultados encontrados na busca (referência a avistamentos)
+
+4. **Avistamento**
+   - **Atributos:**
+     - `avistamento_id` (PK): Identificador único do avistamento
+     - `animal_id` (FK): Identificador do animal avistado
+     - `usuario_id` (FK): Identificador do usuário que relatou o avistamento
+     - `data_avistamento`: Data do avistamento
+     - `localizacao`: Localização onde o animal foi avistado
+     - `descricao`: Descrição do avistamento
+
+5. **Notificação**
+   - **Atributos:**
+     - `notificacao_id` (PK): Identificador único da notificação
+     - `usuario_id` (FK): Identificador do usuário que receberá a notificação
+     - `tipo`: Tipo de notificação (Novo avistamento, Atualização de status, etc.)
+     - `mensagem`: Mensagem da notificação
+     - `data_envio`: Data e hora do envio da notificação
+
+6. **Assinatura**
+   - **Atributos:**
+     - `assinatura_id` (PK): Identificador único da assinatura
+     - `usuario_id` (FK): Identificador do usuário assinante
+     - `tipo_plano`: Tipo de plano (Gratuito, Premium, etc.)
+     - `data_inicio`: Data de início da assinatura
+     - `data_fim`: Data de término da assinatura (se aplicável)
+     - `valor`: Valor pago pela assinatura
+
+#### 2. **Relacionamentos**
+
+1. **Usuário e Animal**
+   - **Relacionamento:** Um usuário pode registrar vários animais desaparecidos, e um animal é registrado por um único usuário.
+   - **Cardinalidade:** 1:N (Um usuário tem muitos animais; um animal pertence a um único usuário)
+
+2. **Usuário e Busca**
+   - **Relacionamento:** Um usuário pode realizar várias buscas, e uma busca é realizada por um único usuário.
+   - **Cardinalidade:** 1:N (Um usuário realiza muitas buscas; uma busca é realizada por um único usuário)
+
+3. **Animal e Busca**
+   - **Relacionamento:** Uma busca pode envolver um ou mais animais, e um animal pode ser incluído em várias buscas.
+   - **Cardinalidade:** M:N (Uma busca pode envolver vários animais e um animal pode ser incluído em várias buscas)
+
+4. **Animal e Avistamento**
+   - **Relacionamento:** Um animal pode ter vários avistamentos, e cada avistamento é relacionado a um único animal.
+   - **Cardinalidade:** 1:N (Um animal pode ter muitos avistamentos; um avistamento refere-se a um único animal)
+
+5. **Usuário e Avistamento**
+   - **Relacionamento:** Um usuário pode relatar vários avistamentos, e cada avistamento é relatado por um único usuário.
+   - **Cardinalidade:** 1:N (Um usuário pode relatar muitos avistamentos; um avistamento é relatado por um único usuário)
+
+6. **Usuário e Notificação**
+   - **Relacionamento:** Um usuário pode receber várias notificações, e cada notificação é enviada a um único usuário.
+   - **Cardinalidade:** 1:N (Um usuário pode receber muitas notificações; uma notificação é enviada a um único usuário)
+
+7. **Usuário e Assinatura**
+   - **Relacionamento:** Um usuário pode ter uma assinatura, e uma assinatura pertence a um único usuário.
+   - **Cardinalidade:** 1:1 (Um usuário tem uma assinatura; uma assinatura pertence a um único usuário)
+
+#### 3. **Restrições**
+
+1. **Unicidade de E-mail:**
+   - O e-mail do usuário deve ser único no banco de dados.
+
+2. **Validação de Foto:**
+   - A URL da foto do animal deve ser válida e acessível.
+
+3. **Data de Desaparecimento:**
+   - A data de desaparecimento não deve ser uma data futura.
+
+4. **Status do Animal:**
+   - O status do animal deve ser restrito a valores predefinidos (Desaparecido, Encontrado).
+
+5. **Validade da Assinatura:**
+   - A data de término da assinatura (se aplicável) deve ser posterior à data de início.
+
+6. **Notificação:**
+   - As notificações devem ser enviadas somente para usuários ativos e devem respeitar o tipo de notificação especificado.
+
 
 ### Resumo
 
