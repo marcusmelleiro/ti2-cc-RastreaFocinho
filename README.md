@@ -28,6 +28,26 @@
 - **Outros Stakeholders:**
   - **Veterinários e Clínicas de Animais:** Profissionais que podem ajudar a identificar animais desaparecidos que chegam até eles.
   - **Autoridades Locais:** Entidades que podem colaborar em caso de animais encontrados em áreas públicas ou que necessitam de intervenção.
+ 
+
+  Claro! Aqui está o texto com a formatação e correções apropriadas:
+
+---
+
+### 4. **Quais foram as principais motivações para o desenvolvimento do projeto?**
+
+  - As principais motivações para o desenvolvimento do projeto surgiram da dificuldade que muitas pessoas enfrentam ao buscar pets desaparecidos. Frequentemente, os donos recorrem a métodos tradicionais e ineficazes, como a distribuição de folhetos, cartazes e pôsteres, que possuem um alcance limitado e nem sempre trazem resultados. Além disso, a preocupação com o bem-estar dos animais e o desejo de ajudar os donos a reencontrarem seus companheiros de forma rápida e eficiente também nos impulsionaram a criar essa plataforma. Nosso objetivo é minimizar o sofrimento de ambos, oferecendo uma solução mais moderna e acessível para resolver esse problema.
+
+### 5. **Qual é o objetivo do projeto?**
+
+ - O objetivo do projeto é desenvolver uma plataforma eficiente e acessível que ajude donos de pets a reencontrarem seus animais de forma rápida e precisa. Por meio de anúncios e da integração de tecnologia de reconhecimento de imagem, a plataforma permitirá a busca de pets desaparecidos com base em fotos, agilizando o processo de busca e aumentando significativamente as chances de sucesso.
+
+### 6. **Que impacto o projeto trará para seu público e para a sociedade?**
+
+ - O projeto trará um impacto significativo para a sociedade ao facilitar os reencontros entre donos e seus pets, reduzindo o tempo e o esforço necessários para localizar animais desaparecidos. Além disso, a plataforma promoverá o bem-estar animal ao oferecer uma solução mais eficaz e compassiva, e também introduzirá inovações tecnológicas, como o reconhecimento de imagem, para transformar a forma como lidamos com essa questão tão sensível.
+
+--- 
+
 
 ### Resumo
 
