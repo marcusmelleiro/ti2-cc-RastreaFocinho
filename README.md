@@ -1,6 +1,5 @@
 # Rastrea Focinho 
 
-
 ### 1. **Tema e Nome do Projeto**
 
 - **Tema:** Desenvolvimento de uma plataforma Web para ajudar na busca e recuperação de animais domésticos desaparecidos.
@@ -28,11 +27,6 @@
 - **Outros Stakeholders:**
   - **Veterinários e Clínicas de Animais:** Profissionais que podem ajudar a identificar animais desaparecidos que chegam até eles.
   - **Autoridades Locais:** Entidades que podem colaborar em caso de animais encontrados em áreas públicas ou que necessitam de intervenção.
- 
-
-  Claro! Aqui está o texto com a formatação e correções apropriadas:
-
----
 
 ### 4. **Quais foram as principais motivações para o desenvolvimento do projeto?**
 
@@ -46,8 +40,20 @@
 
  - O projeto trará um impacto significativo para a sociedade ao facilitar os reencontros entre donos e seus pets, reduzindo o tempo e o esforço necessários para localizar animais desaparecidos. Além disso, a plataforma promoverá o bem-estar animal ao oferecer uma solução mais eficaz e compassiva, e também introduzirá inovações tecnológicas, como o reconhecimento de imagem, para transformar a forma como lidamos com essa questão tão sensível.
 
---- 
+### 7) Qual é o diferencial/inovação do projeto em relação ao que já existe?
 
+O diferencial do nosso projeto está na integração de algoritmos de inteligência artificial para reconhecimento de imagens, permitindo que os usuários realizem buscas rápidas e eficientes ao cruzar fotos com informações na nossa base de dados. Além disso, nossa plataforma se destaca por oferecer uma interface moderna, intuitiva e acessível, tornando o processo de busca e anúncio de pets desaparecidos ainda mais fácil e eficaz.
+
+### 8) Como o projeto se sustentará? Quais são os mecanismos de monetização?
+
+O projeto poderá se sustentar por meio de diversos mecanismos de monetização, como:
+
+- **Assinaturas Premium:** Oferecer um plano de assinatura para donos de pets que desejam recursos adicionais, como notificações instantâneas, destaque de anúncios e histórico de buscas.
+- **Publicidade Segmentada:** Exibir anúncios relevantes para usuários, como produtos e serviços para pets, de forma não intrusiva.
+- **Parcerias com Pet Shops e Clínicas Veterinárias:** Estabelecer parcerias para promover serviços e produtos específicos, gerando receita por meio de comissões.
+- **Doações:** Disponibilizar a opção de doações para apoiar a manutenção e o desenvolvimento contínuo da plataforma.
+
+--- 
 
 ### Resumo
 
