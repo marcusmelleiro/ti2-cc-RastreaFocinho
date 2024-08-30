@@ -48,8 +48,6 @@ O diferencial do nosso projeto está na integração de algoritmos de inteligên
 
 O projeto poderá se sustentar por meio de diversos mecanismos de monetização, como:
 
-- **Assinaturas Premium:** Oferecer um plano de assinatura para donos de pets que desejam recursos adicionais, como notificações instantâneas, destaque de anúncios e histórico de buscas.
-- **Publicidade Segmentada:** Exibir anúncios relevantes para usuários, como produtos e serviços para pets, de forma não intrusiva.
 - **Parcerias com Pet Shops e Clínicas Veterinárias:** Estabelecer parcerias para promover serviços e produtos específicos, gerando receita por meio de comissões.
 - **Doações:** Disponibilizar a opção de doações para apoiar a manutenção e o desenvolvimento contínuo da plataforma.
 
