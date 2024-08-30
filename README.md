@@ -53,6 +53,34 @@ O projeto poderá se sustentar por meio de diversos mecanismos de monetização,
 - **Parcerias com Pet Shops e Clínicas Veterinárias:** Estabelecer parcerias para promover serviços e produtos específicos, gerando receita por meio de comissões.
 - **Doações:** Disponibilizar a opção de doações para apoiar a manutenção e o desenvolvimento contínuo da plataforma.
 
+ ### 9)Requisitos do Sistema para Rastrea Focinho
+
+1. **Cadastro e Gerenciamento de Usuários**
+   - **Descrição:** O sistema deve permitir que donos de animais, voluntários, e organizações se cadastrem e gerenciem suas contas. Deve incluir funcionalidades para editar perfis, visualizar histórico de buscas e gerenciar configurações de notificação.
+   - **Funcionalidade:** Cadastro de usuários com diferentes permissões; funcionalidades de login e recuperação de senha; interface para gerenciar perfil e preferências.
+
+2. **Registro e Pesquisa de Animais Desaparecidos**
+   - **Descrição:** Os usuários devem poder registrar animais desaparecidos com informações detalhadas e imagens. O sistema deve permitir a busca eficiente por animais desaparecidos com base em critérios como localização, características e fotos.
+   - **Funcionalidade:** Formulário para registro de animais, upload de fotos, e campos para informações detalhadas; mecanismo de busca com filtros avançados.
+
+3. **Reconhecimento de Imagens**
+   - **Descrição:** A plataforma deve integrar tecnologia de reconhecimento de imagem para permitir que os usuários realizem buscas usando fotos de animais desaparecidos, comparando-as com uma base de dados.
+   - **Funcionalidade:** Integração com APIs de reconhecimento de imagem; capacidade de comparar fotos enviadas com imagens na base de dados e exibir resultados relevantes.
+
+4. **Sistema de Notificações e Alertas**
+   - **Descrição:** O sistema deve enviar notificações e alertas aos usuários sobre animais desaparecidos e encontrados, atualizações de status e outros eventos importantes relacionados às buscas.
+   - **Funcionalidade:** Configuração de notificações por e-mail e SMS; alertas em tempo real sobre novos avistamentos e atualizações.
+
+5. **Interface Intuitiva e Acessível**
+   - **Descrição:** A plataforma deve ter uma interface moderna e intuitiva que seja fácil de usar tanto para pessoas com experiência técnica quanto para usuários comuns.
+   - **Funcionalidade:** Design responsivo e acessível; navegação simplificada; suporte a dispositivos móveis e desktops.
+
+6. **Mecanismos de Monetização**
+   - **Descrição:** O sistema deve incluir opções para monetização, como assinaturas premium, publicidade segmentada e parcerias com pet shops e clínicas veterinárias.
+   - **Funcionalidade:** Implementação de planos de assinatura e opções de pagamento; integração de anúncios; gerenciamento de parcerias e comissões.
+
+Esses requisitos cobrem as principais funcionalidades necessárias para garantir que o sistema **Rastrea Focinho** atenda às necessidades dos usuários e se mantenha eficiente e sustentável.  
+
 --- 
 
 ### Resumo
